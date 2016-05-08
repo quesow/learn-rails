@@ -9,7 +9,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 group :development, :test do
   gem 'byebug'
-  gem 'web-console', '~> 2.0'
+  #gem 'web-console', '~> 2.0'
   gem 'spring'
 end
 gem 'foundation-rails', '~> 5.5'
@@ -17,12 +17,17 @@ gem 'gibbon'
 gem 'high_voltage'
 gem 'simple_form'
 group :development do
-  gem 'better_errors'
-  gem 'quiet_assets'
-  gem 'rails_layout'
-  gem 'sqlite3'
+ gem 'better_errors'
+ gem 'quiet_assets'
+ gem 'rails_layout'
+ gem 'sqlite3'
+ gem 'web-console', '~> 2.0'
 end
 group :production do
-  gem 'pg'
-  gem 'rails_12factor'
+ gem 'pg'
+ gem 'rails_12factor'
+end
+group :test do
+ gem 'minitest-spec-rails'
+ gem 'minitest-rails-capybara'
 end
